@@ -1,0 +1,6 @@
+<h1> Billboards </h1>
+<p><%= link_to 'New Billboard', new_billboard_path %></p>
+<% @billboards.each do |billboard| %>
+  <h2><%= billboard.name %></h2>
+  <%= link_to 'Show Billboard', billboards_path(billboard) %>
+<% end %>
